@@ -2,6 +2,7 @@ import { useRef, RefObject } from 'react';
 import './App.scss';
 import Header from './sections/Header/Header';
 import Home from './sections/Home/Home';
+import AboutMe from './sections/AboutMe/AboutMe';
 // import ScrollCoordinatorContext from './contexts/scrollCoordinator';
 
 function App() {
@@ -20,11 +21,10 @@ function App() {
   return (
     <div className='landing-container'>
       <Header />
-
       <Home scrollableSectionRef={homeSection} didClickArrow={() => scrollDown(aboutMeSection)}/>
-
-      <Home scrollableSectionRef={aboutMeSection} didClickArrow={() => scrollDown(contactSection)}/> 
+      <AboutMe scrollableSectionRef={aboutMeSection} didClickArrow={() => scrollDown(contactSection)}/>
       <Home scrollableSectionRef={contactSection} didClickArrow={() => scrollDown(homeSection)}/> 
+      {/* <Home scrollableSectionRef={contactSection} didClickArrow={() => scrollDown(homeSection)}/>  */}
     </ div>
   )
 }

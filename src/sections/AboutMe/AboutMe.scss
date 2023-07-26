@@ -1,0 +1,138 @@
+@import '../../../colors.scss';
+
+.aboutme-section {
+    width: 100%;
+    height: 100vh;
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .aboutme-information-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 600px;
+        height: 700px;
+
+        .arrow {
+            position: absolute;
+            left: 0%;
+        }
+
+        .svg-container {
+            .uparrow-image {
+                position: absolute;
+                bottom: 0%;
+                right: 20%;
+                
+            }
+
+            .macbook-image {
+                position: absolute;
+                left: 15%;
+                bottom: 15%;
+            }
+        }
+
+
+        .title-container {
+            display: flex;
+
+            .note-image {
+                position: absolute;
+                top: 15%;
+            }
+            .aboutme-title {
+                font-family: Poppins;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin:0;
+                padding: 0;
+                .green-text {
+                    color: $primary-color;
+                }
+            }
+    
+            .lamp-image {
+                align-self: flex-end;
+                position: absolute;
+                right: 30px;
+            }    
+        }
+
+        .aboutme-text {
+            width: 389px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $tertiary-color;
+        }
+    }
+
+    .image-container {
+            width: 550px;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+               
+            img {
+                width: 500px;
+                height: 500px;    
+                transform: translatey(0px);
+                animation: float 6s ease-in-out infinite;
+            }
+    }
+
+    .button-container {
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        .next-button {
+            padding: 0;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            transition: .5s, color .10s;
+            -webkit-transition: .5s, color .10s;
+            -moz-transition: .5s, color .10s;   
+            &:hover {
+                transform: translatey(20px);
+                -webkit-transform: translatey(20px);
+                -moz-transform: translatey(20px);
+            }
+
+            img {
+                width: 70px;
+            }
+        }       
+    }
+}
+
+
+
+@keyframes float {
+	0% {
+		// box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		// box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-30px);
+	}
+	100% {
+		// box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+

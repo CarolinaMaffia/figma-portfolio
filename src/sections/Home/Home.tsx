@@ -14,7 +14,7 @@ interface HomeProps {
 const Home = ({ scrollableSectionRef, didClickArrow }: HomeProps ) => {
     // const { scrollDown } = useContext(ScrollCoordinatorContext);
   return (
-    <div className="home-section" ref={scrollableSectionRef}>
+    <section className="home-section" ref={scrollableSectionRef}>
         <div className='top-container'>
         <div className="title-container">
             <h2 className='frontend'>Frontend - </h2>
@@ -25,14 +25,13 @@ const Home = ({ scrollableSectionRef, didClickArrow }: HomeProps ) => {
             <img src={HomeImage} alt="girl using a computer" className='home image'/>
         </div>
     </div> 
-    {
-            <div className='button-container'>
-            <button className='next-button' onClick={() => didClickArrow()}>
-                    <img src={SlideArrow} alt="go to next section arrow" />
-            </button>
-        </div>
-    }
+
+    <div className='button-container'>
+        <button className='next-button' onClick={() => didClickArrow()}>
+                <img src={SlideArrow} alt="go to next section arrow" />
+        </button>
     </div>
+    </section>
   )
 }
 
