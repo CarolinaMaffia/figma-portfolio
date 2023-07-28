@@ -7,7 +7,7 @@ const Header = () => {
 
         <div className='list-container'>
             <ol>
-                <li>Home</li>
+                <li><a>Home</a></li>
                 <li>About Me</li>
                 <li>Contact</li>
             </ol>

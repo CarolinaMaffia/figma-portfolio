@@ -1,0 +1,25 @@
+.button-container {
+    .next-button {
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        display: inline-flex;
+        transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;  
+        &:hover {
+            transform: translatey(20px);
+            -webkit-transform: translatey(20px);
+            -moz-transform: translatey(20px);
+        }
+
+        img {
+            width: 70px;
+        }
+    } 
+
+}
+
+.rotate-button {
+    transform: rotate(180deg);
+}

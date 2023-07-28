@@ -1,20 +1,14 @@
-import { RefObject } from 'react';
 import HomeImage from '../../assets/undraw_dev_focus_re_6iwt.svg';
 import SpaceBackground from '../../assets/undraw_stars_re_6je7.svg';
-import SlideArrow from '../../svg/slide-arrow.svg'
 import './Home.scss';
+import ScrollableSection from '../../components/ScrollableSection/ScrollableSection';
 // import ScrollCoordinatorContext from '../../contexts/scrollCoordinator';
 
-
-interface HomeProps {
-    scrollableSectionRef: RefObject<HTMLDivElement>,
-    didClickArrow(): void 
-}
-
-const Home = ({ scrollableSectionRef, didClickArrow }: HomeProps ) => {
+const Home = () => {
     // const { scrollDown } = useContext(ScrollCoordinatorContext);
+
   return (
-    <section className="home-section" ref={scrollableSectionRef}>
+    <ScrollableSection>
         <div className='top-container'>
         <div className="title-container">
             <h2 className='frontend'>Frontend - </h2>
@@ -25,14 +19,8 @@ const Home = ({ scrollableSectionRef, didClickArrow }: HomeProps ) => {
             <img src={HomeImage} alt="girl using a computer" className='home image'/>
         </div>
     </div> 
-
-    <div className='button-container'>
-        <button className='next-button' onClick={() => didClickArrow()}>
-                <img src={SlideArrow} alt="go to next section arrow" />
-        </button>
-    </div>
-    </section>
-  )
+    </ScrollableSection>  
+    )
 }
 
 export default Home
