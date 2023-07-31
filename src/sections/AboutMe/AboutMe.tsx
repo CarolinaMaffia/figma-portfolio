@@ -31,6 +31,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="image-container">
+                <h3 className="aboutme-title">Lorem  <span className=" aboutme-title green-text">ipsum</span></h3>
                 <img src={AboutMeImg} alt="dasd" />
             </div>
         </div>
