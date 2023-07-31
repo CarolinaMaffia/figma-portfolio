@@ -12,6 +12,8 @@ function App() {
         <>
           <Header />
           <Home />
+          <Home />
+          <Home />
           {/* <AboutMe  /> */}
           {/* <AboutMe  /> */}
           {/* <AboutMe  /> */}
