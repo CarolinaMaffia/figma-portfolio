@@ -1,5 +1,5 @@
 import { useContext, useRef, useEffect } from 'react'
-import Button from '../Button/Button';
+import NextSectionButton from '../Button/NextSectionButton';
 import './ScrollableSection.scss';
 import ScrollCoordinatorContext from '../../contexts/scrollCoordinator';
 
@@ -20,7 +20,7 @@ const ScrollableSection = ({ children, buttonDirection }: ScrollableSectionProps
     return (
     <section className='section-container' ref={scrollableSectionRef}>
         {children}
-        <Button handleOnClick={() => context?.scrollDown(scrollableSectionRef)} buttonDirection={buttonDirection}/>
+        <NextSectionButton handleOnClick={() => context?.scrollDown(scrollableSectionRef)} buttonDirection={buttonDirection}/>
     </section>
   )
 }

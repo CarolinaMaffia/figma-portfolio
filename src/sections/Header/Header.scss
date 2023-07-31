@@ -6,17 +6,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
-    border-bottom: 1px solid rgba(238, 238, 238, 0.10);;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.10);
 
     .header-title {
-        padding-left: 30px;
         font-family: 'Source Code Pro', monospace;
         font-size: 30px;
         font-style: bold;
         font-weight: 600;
         line-height: normal;
+        margin-left: 15px;
     }
 
     .list-container {
@@ -38,3 +36,4 @@ header {
 
     }
 }
+
